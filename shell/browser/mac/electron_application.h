@@ -26,7 +26,7 @@
 - (void)setShutdownHandler:(base::Callback<bool()>)handler;
 - (void)registerURLHandler;
 
-// Called when macOS itself is shutting down.
+// Called when the user requests a logout or powers off the machine.
 - (void)willPowerOff:(NSNotification*)notify;
 
 // CrAppProtocol:
